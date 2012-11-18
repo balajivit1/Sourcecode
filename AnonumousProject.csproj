@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FCA2CA6-6598-4305-A34B-AA19787B25E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnonumousProject</RootNamespace>
+    <AssemblyName>AnonumousProject</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSentRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSentRequests.Designer.cs">
+      <DependentUpon>AdminSentRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSentResponsess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSentResponsess.Designer.cs">
+      <DependentUpon>AdminSentResponsess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnonoyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnonoyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AnonoyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnonoyDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ComposeRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComposeRequest.Designer.cs">
+      <DependentUpon>ComposeRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Distance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Distance.Designer.cs">
+      <DependentUpon>Distance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerSentResponses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerSentResponses.Designer.cs">
+      <DependentUpon>ManagerSentResponses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccount.Designer.cs">
+      <DependentUpon>MyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostDetails.Designer.cs">
+      <DependentUpon>PostDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSentRequests.resx">
+      <DependentUpon>AdminSentRequests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSentResponsess.resx">
+      <DependentUpon>AdminSentResponsess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComposeRequest.resx">
+      <DependentUpon>ComposeRequest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Distance.resx">
+      <DependentUpon>Distance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerSentResponses.resx">
+      <DependentUpon>ManagerSentResponses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount.resx">
+      <DependentUpon>MyAccount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostDetails.resx">
+      <DependentUpon>PostDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordNotFound.resx">
+      <DependentUpon>RecordNotFound.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleTasks.resx">
+      <DependentUpon>ScheduleTasks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taskschedule.resx">
+      <DependentUpon>Taskschedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalResponses.resx">
+      <DependentUpon>TotalResponses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSentRequests.resx">
+      <DependentUpon>UserSentRequests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdminRequests.resx">
+      <DependentUpon>ViewAdminRequests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdminResponses.resx">
+      <DependentUpon>ViewAdminResponses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewManagerResponces.resx">
+      <DependentUpon>ViewManagerResponces.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUserRequests.resx">
+      <DependentUpon>ViewUserRequests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="AnonoyDataSet.xsc">
+      <DependentUpon>AnonoyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnonoyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnonoyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnonoyDataSet.xss">
+      <DependentUpon>AnonoyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AnonoyDataSet1.xsc">
+      <DependentUpon>AnonoyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AnonoyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnonoyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AnonoyDataSet1.xss">
+      <DependentUpon>AnonoyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RecordNotFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordNotFound.Designer.cs">
+      <DependentUpon>RecordNotFound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleTasks.Designer.cs">
+      <DependentUpon>ScheduleTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taskschedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taskschedule.Designer.cs">
+      <DependentUpon>Taskschedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalResponses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalResponses.Designer.cs">
+      <DependentUpon>TotalResponses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSentRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSentRequests.Designer.cs">
+      <DependentUpon>UserSentRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdminRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdminRequests.Designer.cs">
+      <DependentUpon>ViewAdminRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdminResponses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdminResponses.Designer.cs">
+      <DependentUpon>ViewAdminResponses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewManagerResponces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewManagerResponces.Designer.cs">
+      <DependentUpon>ViewManagerResponces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUserRequests.Designer.cs">
+      <DependentUpon>ViewUserRequests.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anonyarchi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anonyyarchi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reg9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeuser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suc3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileview2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileview3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileview4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tot1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tot2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dis1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sent1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_icon3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinkcloud.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbg.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vm.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\head.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\myacc.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inner.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inner1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comp.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\det.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RES.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userview.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greencloud.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postdis.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
